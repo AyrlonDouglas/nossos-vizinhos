@@ -8,9 +8,16 @@ import { MatSliderModule } from '@angular/material/slider';
 import { OutdorInitialComponent } from './outdor-initial/outdor-initial.component';
 import { NavegationComponent } from './navegation/navegation.component';
 import { CardBriefInformationComponent } from './card-brief-information/card-brief-information.component';
+import { CountryListComponent } from './country-list/country-list.component';
 
 @NgModule({
-  declarations: [AppComponent, OutdorInitialComponent, NavegationComponent, CardBriefInformationComponent],
+  declarations: [
+    AppComponent,
+    OutdorInitialComponent,
+    NavegationComponent,
+    CardBriefInformationComponent,
+    CountryListComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
