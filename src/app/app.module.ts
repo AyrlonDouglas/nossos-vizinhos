@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { OutdorInitialComponent } from './outdor-initial/outdor-initial.component';
+import { NavegationComponent } from './navegation/navegation.component';
 
 @NgModule({
-  declarations: [AppComponent, OutdorInitialComponent],
+  declarations: [AppComponent, OutdorInitialComponent, NavegationComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

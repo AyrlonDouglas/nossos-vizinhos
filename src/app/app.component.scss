@@ -2,11 +2,18 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 0;
+  font-family: "Cousine", monospace;
 }
 body {
   text-align: center;
   border: 1px solid black;
   height: 95%;
   width: 95%;
-  background-color: #f8f8f8;
+  background-color: #fdf9f3;
+}
+
+* {
+  box-sizing: border-box;
 }
