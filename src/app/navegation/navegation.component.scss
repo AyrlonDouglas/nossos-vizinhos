@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  font-family: "Cousine", monospace;
+
+  a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #2c292d;
+    padding: 10px;
+    border: 2px solid #2c292d;
+    font-size: 1.25rem;
+    background-color: #fdf9f3;
+    z-index: 1;
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: #2c292d;
+  }
+
+  .nav__figure {
+    width: 30px;
+    margin-right: 10px;
+  }
+}
