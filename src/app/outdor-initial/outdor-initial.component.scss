@@ -5,6 +5,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  // text-align: center;
+
   // border-bottom: 3px solid #2c292d;
 
   img {
@@ -24,11 +27,20 @@ section {
     font-weight: bold;
     // text-transform: uppercase;
   }
-  p {
+  h2 {
     font-size: 1rem;
     color: #2c292d;
     font-family: "Cousine", monospace;
     margin: 20px;
     text-transform: uppercase;
+    font-weight: normal;
   }
 }
+
+// body {
+//   text-align: center;
+//   border: 2px solid black;
+//   height: 95%;
+//   width: 95%;
+//   background-color: #fdf9f3;
+// }
