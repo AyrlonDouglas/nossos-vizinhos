@@ -41,7 +41,9 @@ nav {
   }
 
   .nav__figure {
-    width: 30px;
+    display: flex;
+
+    width: 40px;
     margin-right: 10px;
   }
 }
@@ -68,6 +70,14 @@ nav {
   nav {
     a {
       font-size: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    a {
+      font-size: 16px;
     }
   }
 }
