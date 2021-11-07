@@ -1,3 +1,4 @@
+import { CountryService } from './service/country.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +11,7 @@ import { NavegationComponent } from './navegation/navegation.component';
 import { CardBriefInformationComponent } from './card-brief-information/card-brief-information.component';
 import { CountryListComponent } from './country-list/country-list.component';
 import { CountryCardComponent } from './country-card/country-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,8 +27,9 @@ import { CountryCardComponent } from './country-card/country-card.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [CountryService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
