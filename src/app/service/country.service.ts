@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class CountryService {
   countrys = [];
+  countrysFiltred = [];
 
   constructor(public httpClient: HttpClient) {
     this.carregarCountrys();
@@ -16,6 +17,22 @@ export class CountryService {
       .toPromise();
 
     this.countrys = requisicao.Countries;
-    console.log(this.countrys);
+    this.countrysFiltred = requisicao.Countries.filter((v: any) => {
+      if (
+        v.CountryCode == 'BR' ||
+        v.CountryCode == 'SR' ||
+        v.CountryCode == 'GY' ||
+        v.CountryCode == 'VE' ||
+        v.CountryCode == 'CO' ||
+        v.CountryCode == 'PE' ||
+        v.CountryCode == 'BO' ||
+        v.CountryCode == 'PY' ||
+        v.CountryCode == 'AR' ||
+        v.CountryCode == 'UY'
+      ) {
+        return true;
+      } else return false;
+    });
+    console.log(this.countrysFiltred);
   }
 }
