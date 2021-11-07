@@ -1,18 +1,31 @@
 .end-page {
+  // border-top: 2px solid #2c292d;
   font-family: "Cousine", monospace;
 
   //   background-color: rgb(48, 56, 65);
   //   font-family: "Raleway", sans-serif;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 400px;
 }
 .end-page-text1 {
   text-align: center;
   font-size: 5vw;
   font-weight: 700;
   margin: 10px;
+  position: relative;
+
+  p {
+    text-decoration: none;
+    color: #2c292d;
+    padding: 10px;
+    border: 2px solid #2c292d;
+    font-size: 2.5vw;
+    background-color: #fdf9f3;
+  }
 }
 .end-page-text2 {
   font-size: 3vw;
@@ -70,5 +83,11 @@ svg {
   }
   .end-page-text2 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .end-page {
+    border-top: none;
   }
 }
