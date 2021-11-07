@@ -9,5 +9,7 @@ import { Component } from '@angular/core';
 export class CountryListComponent {
   // countrys = ['brasil', 'argentina'];
 
-  constructor(public countryService: CountryService) {}
+  constructor(public countryService: CountryService) {
+    // countryService.formatData();
+  }
 }
