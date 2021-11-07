@@ -7,18 +7,12 @@ section {
   justify-content: space-evenly;
   align-items: center;
 
-  // text-align: center;
-
-  // border-bottom: 3px solid #2c292d;
-
   img {
     width: 25vw;
     border-bottom: 2px solid #2c292d;
     border-top: 2px solid #2c292d;
     border-radius: 30px;
     margin: 30px;
-    // box-shadow: 1px 2px 3px #2c292d;
-    // box-shadow: 1px 1px 1px black;
   }
   h1 {
     font-size: 8vw;
@@ -27,7 +21,6 @@ section {
     color: #2c292d;
     line-height: 50px;
     font-weight: bold;
-    // text-transform: uppercase;
   }
   h2 {
     font-size: 2vw;
@@ -41,7 +34,6 @@ section {
 
 @media (max-width: 500px) {
   section {
-    // height: 350px;
     img {
       width: 150px;
     }

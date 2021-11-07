@@ -38,7 +38,6 @@ export class CountryService {
         return true;
       } else return false;
     });
-    // console.log(this.countrysFiltred);
   }
 
   dataFormatada(dataWithoutFormat: any) {
