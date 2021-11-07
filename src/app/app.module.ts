@@ -12,6 +12,7 @@ import { CardBriefInformationComponent } from './card-brief-information/card-bri
 import { CountryListComponent } from './country-list/country-list.component';
 import { CountryCardComponent } from './country-card/country-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     CardBriefInformationComponent,
     CountryListComponent,
     CountryCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ section {
   margin: 20px;
   border: 2px solid #2c292d;
   text-transform: uppercase;
+  transition: 0.5s;
 
   .section--country-name {
     background-color: #ffd866;
@@ -15,5 +16,9 @@ section {
     padding: 0.75rem 1.5rem;
     font-weight: bold;
     margin: 0;
+  }
+  &:hover {
+    transform: translatey(10px);
+    transition: 0.5s;
   }
 }
