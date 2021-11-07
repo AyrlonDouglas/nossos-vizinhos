@@ -18,7 +18,7 @@ nav {
     color: #2c292d;
     padding: 10px;
     border: 2px solid #2c292d;
-    font-size: 1.25rem;
+    font-size: 2.5vw;
     background-color: #fdf9f3;
     z-index: 1;
 
@@ -43,5 +43,31 @@ nav {
   .nav__figure {
     width: 30px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    height: 130px;
+
+    a {
+      margin: 10px;
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 950px) {
+  nav {
+    a {
+      font-size: 25px;
+    }
   }
 }

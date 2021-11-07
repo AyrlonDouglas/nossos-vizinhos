@@ -1,8 +1,10 @@
 section {
   padding: 15px;
   background-color: #f3efeb;
+
   width: 310px;
-  // min-width: 300px;
+  height: 300px;
+
   margin: 20px;
   border: 2px solid #2c292d;
   text-transform: uppercase;
@@ -12,5 +14,6 @@ section {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     font-weight: bold;
+    margin: 0;
   }
 }
