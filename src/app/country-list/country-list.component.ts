@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./country-list.component.scss'],
 })
 export class CountryListComponent {
-  // countrys = ['brasil', 'argentina'];
-
-  constructor(public countryService: CountryService) {
-    // countryService.formatData();
-  }
+  constructor(public countryService: CountryService) {}
 }

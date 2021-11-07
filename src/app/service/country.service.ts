@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class CountryService {
   countrys = [];
-  countrysFiltred = [];
+  countrysFiltred: any = [];
 
   constructor(public httpClient: HttpClient) {
     this.carregarCountrys();
@@ -19,6 +19,7 @@ export class CountryService {
 
     this.countrys = requisicao.Countries;
     this.filtrarCountrys();
+    this.teste();
   }
   filtrarCountrys() {
     this.countrysFiltred = this.countrys.filter((v: any) => {
@@ -55,5 +56,8 @@ export class CountryService {
     let dateNew = `${day}/${month}/${year}`;
 
     console.log(dateNew);
+  }
+  teste() {
+    console.log(this.countrysFiltred);
   }
 }

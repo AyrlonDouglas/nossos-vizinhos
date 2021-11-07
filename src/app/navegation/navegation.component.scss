@@ -8,7 +8,8 @@ nav {
   position: relative;
   font-family: "Cousine", monospace;
 
-  a {
+  a,
+  button {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,7 +54,8 @@ nav {
     flex-direction: column;
     height: 130px;
 
-    a {
+    a,
+    button {
       margin: 10px;
       &:last-child {
         margin-left: 10px;
@@ -68,7 +70,8 @@ nav {
 
 @media (min-width: 950px) {
   nav {
-    a {
+    a,
+    button {
       font-size: 25px;
     }
   }
@@ -76,7 +79,8 @@ nav {
 
 @media (max-width: 700px) {
   nav {
-    a {
+    a,
+    button {
       font-size: 16px;
     }
   }

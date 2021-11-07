@@ -13,6 +13,7 @@ import { CountryListComponent } from './country-list/country-list.component';
 import { CountryCardComponent } from './country-card/country-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatSliderModule,
     HttpClientModule,
+    MatMenuModule,
   ],
   providers: [CountryService],
   bootstrap: [AppComponent],
