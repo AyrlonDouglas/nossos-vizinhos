@@ -1,3 +1,4 @@
+import { CountryService } from './../service/country.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./country-list.component.scss'],
 })
 export class CountryListComponent {
-  countrys = ['brasil', 'argentina'];
+  // countrys = ['brasil', 'argentina'];
+
+  constructor(public countryService: CountryService) {}
 }
