@@ -9,6 +9,7 @@ import { OutdorInitialComponent } from './outdor-initial/outdor-initial.componen
 import { NavegationComponent } from './navegation/navegation.component';
 import { CardBriefInformationComponent } from './card-brief-information/card-brief-information.component';
 import { CountryListComponent } from './country-list/country-list.component';
+import { CountryCardComponent } from './country-card/country-card.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CountryListComponent } from './country-list/country-list.component';
     NavegationComponent,
     CardBriefInformationComponent,
     CountryListComponent,
+    CountryCardComponent,
   ],
   imports: [
     BrowserModule,
