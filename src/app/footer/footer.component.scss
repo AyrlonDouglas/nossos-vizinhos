@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   min-height: 200px;
@@ -85,5 +84,11 @@ svg {
 @media (max-width: 400px) {
   .end-page {
     border-top: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .end-page {
+    flex-wrap: wrap;
   }
 }
