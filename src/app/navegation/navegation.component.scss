@@ -10,10 +10,12 @@ nav {
 
   a,
   button {
+    cursor: pointer;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
+    border-radius: 10px;
 
     text-decoration: none;
     color: #2c292d;
@@ -24,11 +26,11 @@ nav {
     z-index: 1;
 
     &:nth-child(1) {
-      margin-right: 10px;
+      margin-right: 40px;
     }
 
     &:hover {
-      background-color: #dcdbdb;
+      background-color: #ffd866;
       transition: 150ms;
     }
   }
@@ -58,19 +60,13 @@ nav {
     a,
     button {
       margin: 10px;
+      &:first-child {
+        margin-right: 10px;
+      }
     }
 
     &::before {
       display: none;
-    }
-  }
-}
-
-@media (min-width: 950px) {
-  nav {
-    a,
-    button {
-      font-size: 25px;
     }
   }
 }
@@ -84,6 +80,15 @@ nav {
   }
 }
 
+@media (min-width: 950px) {
+  nav {
+    a,
+    button {
+      font-size: 25px;
+    }
+  }
+}
+
 // ESTILO ITENS MENU
 
 .menu__item {
@@ -91,6 +96,7 @@ nav {
   text-align: center;
   font-size: 16px;
   padding: 0;
+  font-weight: bold;
   border-bottom: 1px solid #2c292d;
   &:hover {
     background-color: #dcdbdb;
@@ -104,7 +110,7 @@ nav {
     text-decoration: none;
     color: #2c292d;
     &:hover {
-      background-color: #dcdbdb;
+      background-color: #ffd866;
     }
   }
 }

@@ -200,7 +200,9 @@
       mat-menu-item
       *ngFor="let country of countryService.countrysFiltred"
     >
-      <a href="#{{ country.CountryCode }}">{{ country.Country }}</a>
+      <a href="#{{ country.CountryCode }}">{{
+        country.Country.toUpperCase()
+      }}</a>
     </button>
   </mat-menu>
 </nav>

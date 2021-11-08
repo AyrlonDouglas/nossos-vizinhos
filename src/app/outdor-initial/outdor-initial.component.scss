@@ -1,37 +1,61 @@
 section {
   text-align: center;
   width: 100%;
-  height: 400px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  padding: 30px 0;
 
+  .textSumImgage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   img {
-    width: 25vw;
+    width: 20vw;
     border-bottom: 2px solid #2c292d;
     border-top: 2px solid #2c292d;
     border-radius: 30px;
     margin: 30px;
   }
   h1 {
-    font-size: 8vw;
+    width: 340px;
+    text-transform: uppercase;
+    font-size: 7vw;
     font-family: "Cousine", monospace;
     margin: 10px 20px;
     color: #2c292d;
+    // text-shadow: 1px 1px 3px #2c292d;
     line-height: 50px;
     font-weight: bold;
+    &.retroshadow {
+      color: white;
+      // background-color: #d5d5d5;
+      letter-spacing: 0.05em;
+      text-shadow: 4px 4px 0px #2c2c2c;
+    }
   }
   h2 {
     font-size: 2vw;
     color: #2c292d;
     font-family: "Cousine", monospace;
-    margin: 20px;
+    font-weight: bold !important;
+    padding: 10px 0;
+    margin: 10px;
     text-transform: uppercase;
     font-weight: normal;
   }
 }
 
+@media (max-width: 400px) {
+  section {
+    img {
+      width: 100px;
+    }
+  }
+}
 @media (max-width: 500px) {
   section {
     img {
@@ -47,39 +71,70 @@ section {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
   section {
     img {
-      width: 100px;
+      width: 150px;
     }
-  }
-}
-
-@media (max-width: 700px) {
-  section {
+    h1 {
+      font-size: 3.5rem;
+    }
     h2 {
-      font-size: 0.8rem;
+      font-size: 1rem;
+      padding-bottom: 10px;
     }
   }
 }
 
-@media (min-width: 950px) {
+@media (max-width: 800px) {
+  section {
+    .textSumImgage {
+      flex-direction: column;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  section {
+    .textSumImgage {
+      flex-direction: column;
+    }
+  }
+}
+
+// @media (max-width: 1001px) {
+//   section {
+//     h1 {
+//       font-size: 50px;
+//     }
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   section {
+//     h1 {
+//       font-size: 0;
+//     }
+//   }
+// }
+@media (min-width: 800px) {
+  section {
+    height: 450px;
+  }
+}
+@media (min-width: 1000px) {
   section {
     height: 450px;
     h1 {
-      font-size: 80px;
+      font-size: 65px;
     }
     h2 {
       font-size: 20px;
     }
     img {
-      width: 240px;
+      width: 245px;
     }
-  }
-}
-
-@media (min-width: 800px) {
-  section {
-    height: 450px;
   }
 }
