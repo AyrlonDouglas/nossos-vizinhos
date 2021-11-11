@@ -24,7 +24,7 @@ section {
     width: 340px;
     text-transform: uppercase;
     font-size: 7vw;
-    font-family: "Cousine", monospace;
+    font-family: "Roboto", sans-serif;
     margin: 10px 20px;
     color: #2c292d;
     // text-shadow: 1px 1px 3px #2c292d;
@@ -39,13 +39,14 @@ section {
   }
   h2 {
     font-size: 2vw;
-    color: #2c292d;
-    font-family: "Cousine", monospace;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
     font-weight: bold !important;
     padding: 10px 0;
     margin: 10px;
     text-transform: uppercase;
     font-weight: normal;
+    // text-shadow: 2px 2px 0px #2c2c2c;
   }
 }
 

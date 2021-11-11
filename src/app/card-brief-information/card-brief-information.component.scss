@@ -1,9 +1,9 @@
 * {
-  font-family: "Cousine", monospace;
+  font-family: "Roboto", sans-serif;
 }
 
 section {
-  margin: 30px 15px;
+  margin: 40px;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -11,13 +11,20 @@ section {
   border: 2px solid black;
   padding: 15px;
   border-radius: 10px;
+  // min-width: 324px;
 }
 
 h3 {
   margin: 0;
   text-align: center;
   width: 140px;
-  background-color: #ffd866;
+  background-color: #335f83;
   padding: 0.75rem 1.5rem;
-  color: #2c292d;
+  color: #ffffff;
+}
+
+@media (max-width: 450px) {
+  section {
+    margin: 40px 5px;
+  }
 }
