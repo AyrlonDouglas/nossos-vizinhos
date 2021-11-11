@@ -15,8 +15,8 @@ section {
   }
   img {
     width: 20vw;
-    border-bottom: 2px solid #2c292d;
-    border-top: 2px solid #2c292d;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
     border-radius: 30px;
     margin: 30px;
   }
@@ -26,7 +26,7 @@ section {
     font-size: 7vw;
     font-family: "Roboto", sans-serif;
     margin: 10px 20px;
-    color: #2c292d;
+    color: #000000;
     // text-shadow: 1px 1px 3px #2c292d;
     line-height: 50px;
     font-weight: bold;
@@ -34,7 +34,7 @@ section {
       color: white;
       // background-color: #d5d5d5;
       letter-spacing: 0.05em;
-      text-shadow: 4px 4px 0px #2c2c2c;
+      text-shadow: 4px 4px 0px #000000;
     }
   }
   h2 {

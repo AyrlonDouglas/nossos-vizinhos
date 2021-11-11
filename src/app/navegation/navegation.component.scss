@@ -18,11 +18,11 @@ nav {
     border-radius: 10px;
 
     text-decoration: none;
-    color: #2c292d;
+    color: #000000;
     padding: 10px;
     border: 2px solid #2c292d;
     font-size: 2.5vw;
-    background-color: #fdf9f3;
+    background-color: #fff;
     z-index: 1;
 
     // &:nth-child(1) {
@@ -30,8 +30,9 @@ nav {
     // }
 
     &:hover {
-      background-color: #c1f761;
+      background-color: #00673f;
       transition: 150ms;
+      color: white;
     }
   }
 
