@@ -19,8 +19,14 @@ export class CountryListComponent {
 
     let year = data.getFullYear();
 
-    let hour = data.getHours();
-    let minutes = data.getMinutes();
+    let hour:any = data.getHours();
+    hour = `0${hour}`;
+    hour = hour.slice(-2)
+
+    let minutes:any = data.getMinutes();
+    minutes = `0${minutes}`;
+    minutes = minutes.slice(-2)
+
 
     let dateNew = `${day}/${month}/${year} às ${hour}:${minutes}`;
 
