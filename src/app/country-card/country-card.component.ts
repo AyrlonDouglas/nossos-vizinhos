@@ -21,7 +21,10 @@ export class CountryCardComponent {
 
     let year = data.getFullYear();
 
-    let dateNew = `${day}/${month}/${year}`;
+    let hour = data.getHours();
+    let minutes = data.getMinutes();
+
+    let dateNew = `${day}/${month}/${year} às ${hour}:${minutes}`;
 
     return dateNew;
   }

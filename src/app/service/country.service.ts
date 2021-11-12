@@ -8,6 +8,7 @@ import { Injectable } from '@angular/core';
 export class CountryService {
   countrys = [];
   countrysFiltred: any = [];
+  global: any = [];
 
   constructor(public httpClient: HttpClient) {
     this.carregarCountrys();
@@ -18,8 +19,18 @@ export class CountryService {
       .toPromise();
 
     this.countrys = requisicao.Countries;
+    this.global = requisicao.Global;
     this.filtrarCountrys();
-    this.teste();
+  }
+  alterarNomeVenezuela(array: []) {
+    let countrys: any = array;
+    for (let country of countrys) {
+      if (country.CountryCode == 'VE') {
+        country.Country = 'Venezuela';
+      }
+    }
+    console.log(countrys);
+    return countrys;
   }
   filtrarCountrys() {
     this.countrysFiltred = this.countrys.filter((v: any) => {
@@ -38,25 +49,7 @@ export class CountryService {
         return true;
       } else return false;
     });
-  }
-
-  dataFormatada(dataWithoutFormat: any) {
-    let data = new Date(dataWithoutFormat);
-    let day: any = data.getDate();
-    day = `0${day}`;
-    day = day.slice(-2);
-
-    let month: any = data.getMonth() + 1;
-    month = `0${month}`;
-    month = month.slice(-2);
-
-    let year = data.getFullYear();
-
-    let dateNew = `${day}/${month}/${year}`;
-
-    console.log(dateNew);
-  }
-  teste() {
+    this.countrysFiltred = this.alterarNomeVenezuela(this.countrysFiltred);
     console.log(this.countrysFiltred);
   }
 }

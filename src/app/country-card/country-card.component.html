@@ -1,7 +1,10 @@
 <section>
-  <p class="section--country-name" id="{{ country.CountryCode }}">
-    {{ country.Country }}
-  </p>
+  <div class="wrapper__title__flag">
+    <p class="section--country-name" id="{{ country.CountryCode }}">
+      {{ country.Country }}
+    </p>
+    <img src="../../assets/images/flags/{{ country.CountryCode }}.png" alt="" />
+  </div>
   <div class="section--country-info">
     <p><b>Casos novos: </b>{{ country.NewConfirmed }}</p>
     <p><b>Total de casos: </b>{{ country.TotalConfirmed }}</p>

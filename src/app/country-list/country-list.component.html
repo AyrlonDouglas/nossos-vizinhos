@@ -1,4 +1,21 @@
 <div class="card__countrys">
+  <div class="data__global" id="global">
+    <div class="wrapper__title__flag">
+      <p class="data__global__title">No Mundo</p>
+      <img src="../../assets/images/earth.png" alt="" />
+    </div>
+
+    <div class="section--country-info">
+      <p><b>Casos novos: </b>{{ countryService.global.NewConfirmed }}</p>
+      <p><b>Total de casos: </b>{{ countryService.global.TotalConfirmed }}</p>
+      <p><b>Mortes Hoje: </b>{{ countryService.global.NewDeaths }}</p>
+      <p><b>Total de mortes: </b>{{ countryService.global.TotalDeaths }}</p>
+      <p>
+        <b>Última atualização: </b
+        >{{ dataFormatada(countryService.global.Date) }}
+      </p>
+    </div>
+  </div>
   <app-country-card
     *ngFor="let country of countryService.countrysFiltred"
     [country]="country"

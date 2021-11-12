@@ -6,3 +6,36 @@
 
   padding-bottom: 40px;
 }
+
+.data__global {
+  padding: 15px;
+  background-color: #f3efeb;
+  border-radius: 10px;
+
+  width: 290px;
+  height: 380px;
+
+  margin: 20px;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+  img {
+    height: 57px;
+    border-radius: 50%;
+  }
+}
+
+.data__global__title {
+  background-color: #9b2424;
+  color: #fff;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.wrapper__title__flag {
+  display: flex;
+  justify-content: space-between;
+}
