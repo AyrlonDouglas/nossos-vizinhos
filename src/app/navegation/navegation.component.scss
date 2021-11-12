@@ -29,10 +29,6 @@ nav {
     background-color: #fff;
     z-index: 1;
 
-    // &:nth-child(1) {
-    //   margin-right: 40px;
-    // }
-
     &:hover {
       background-color: #00673f;
       transition: 150ms;
@@ -68,9 +64,6 @@ nav {
     a,
     button {
       margin: 10px;
-      // &:first-child {
-      //   margin-right: 10px;
-      // }
     }
 
     &::before {
@@ -105,9 +98,6 @@ nav {
       color: white;
     }
   }
-}
-.mat-menu-content:not(:empty) {
-  padding: 0;
 }
 
 .mat-menu-trigger {
