@@ -34,21 +34,9 @@ section {
       color: white;
       // background-color: #d5d5d5;
       letter-spacing: 0.05em;
-      text-shadow: 4px 4px 0px #000000;
+      text-shadow: 2px 2px 2px #000000;
     }
   }
-  // h2 {
-  //   font-size: 2vw;
-  //   color: white;
-  //   font-family: "Roboto", sans-serif;
-  //   font-weight: bold !important;
-  //   margin: 20px;
-  //   text-transform: uppercase;
-  //   font-weight: normal;
-  //   background-color: #00673f;
-  //   padding: 10px;
-  //   // text-shadow: 2px 2px 0px #2c2c2c;
-  // }
 }
 
 @media (max-width: 400px) {
@@ -66,38 +54,21 @@ section {
     h1 {
       font-size: 2rem;
     }
-    // h2 {
-    //   font-size: 1rem;
-    //   padding-bottom: 10px;
-    // }
   }
 }
 
 @media (max-width: 1000px) {
   section {
+    height: 350px;
     img {
       width: 150px;
     }
     h1 {
       font-size: 3.5rem;
     }
-    // h2 {
-    //   font-size: 1rem;
-    //   padding-bottom: 10px;
-    // }
   }
 }
 
-@media (max-width: 800px) {
-  section {
-    .textSumImgage {
-      flex-direction: column;
-    }
-    // h2 {
-    //   font-size: 1rem;
-    // }
-  }
-}
 @media (max-width: 1100px) {
   section {
     .textSumImgage {
@@ -106,29 +77,13 @@ section {
   }
 }
 
-// @media (max-width: 1001px) {
+// @media (min-width: 800px) {
 //   section {
-//     h1 {
-//       font-size: 50px;
-//     }
+//     height: 450px;
 //   }
 // }
-
-// @media (max-width: 1000px) {
-//   section {
-//     h1 {
-//       font-size: 0;
-//     }
-//   }
-// }
-@media (min-width: 800px) {
+@media (min-width: 1001px) {
   section {
-    height: 450px;
-  }
-}
-@media (min-width: 1000px) {
-  section {
-    height: 450px;
     h1 {
       font-size: 65px;
     }

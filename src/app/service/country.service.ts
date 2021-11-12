@@ -29,7 +29,6 @@ export class CountryService {
         country.Country = 'Venezuela';
       }
     }
-    console.log(countrys);
     return countrys;
   }
   filtrarCountrys() {
@@ -50,6 +49,5 @@ export class CountryService {
       } else return false;
     });
     this.countrysFiltred = this.alterarNomeVenezuela(this.countrysFiltred);
-    console.log(this.countrysFiltred);
   }
 }

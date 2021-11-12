@@ -13,6 +13,7 @@
   border-radius: 10px;
 
   width: 290px;
+  min-width: 290px;
   height: 380px;
 
   margin: 20px;
@@ -20,9 +21,15 @@
   text-transform: uppercase;
   transition: 0.5s;
 
+  &:hover {
+    transform: translatey(10px);
+    transition: 0.5s;
+  }
+
   img {
     height: 57px;
     border-radius: 50%;
+    margin-right: 30px;
   }
 }
 

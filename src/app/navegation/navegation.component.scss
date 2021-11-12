@@ -7,6 +7,9 @@ nav {
   height: 100px;
   position: relative;
   font-family: "Roboto", sans-serif;
+  a {
+    width: 178.5px;
+  }
 
   a,
   button {
@@ -16,12 +19,13 @@ nav {
     align-items: center;
     text-transform: uppercase;
     border-radius: 10px;
+    letter-spacing: 3px;
 
     text-decoration: none;
     color: #000000;
     padding: 10px;
     border: 2px solid #000000;
-    font-size: 2.5vw;
+    font-size: 20px;
     background-color: #fff;
     z-index: 1;
 
@@ -56,7 +60,7 @@ nav {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   nav {
     flex-direction: column;
     height: 130px;
@@ -75,35 +79,18 @@ nav {
   }
 }
 
-@media (max-width: 700px) {
-  nav {
-    a,
-    button {
-      font-size: 16px;
-    }
-  }
-}
-
-@media (min-width: 950px) {
-  nav {
-    a,
-    button {
-      font-size: 25px;
-    }
-  }
-}
-
 // ESTILO ITENS MENU
 
 .menu__item {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
+  width: 150px;
   padding: 0;
   font-weight: bold;
   border-bottom: 1px solid #000000;
   &:hover {
-    background-color: #dcdbdb;
+    background-color: #ffffff;
   }
   &:last-child {
     border-bottom: 0;
@@ -121,4 +108,8 @@ nav {
 }
 .mat-menu-content:not(:empty) {
   padding: 0;
+}
+
+.mat-menu-trigger {
+  width: 202.5px;
 }
